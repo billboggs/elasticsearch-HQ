@@ -31,7 +31,7 @@ RUN chgrp -R 0 /src /var/log/supervisor /var/run/supervisor && \
     chmod -R g=u  /src /var/log/supervisor /var/run/supervisor
 
 # Expose service port
-EXPOSE 5000
+EXPOSE 8080
 
 # Start processes
 CMD ["supervisord", "-c", "/etc/supervisor/supervisord.conf"]
